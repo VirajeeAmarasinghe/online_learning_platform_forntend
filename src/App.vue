@@ -1,26 +1,30 @@
+<!-- App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header>
+      <h1>Welcome to our Online Learning Platform!</h1>
+      <p>Start your learning journey today.</p>
+    </header>
+    <main>
+      <section>
+        <router-link to="/courses">Courses</router-link>
+      </section>      
+      <section>
+        <router-link to="/enrolls">Enroll Student</router-link>        
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Online Learning Platform</p>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Add your CSS styles for the landing page here */
 </style>
